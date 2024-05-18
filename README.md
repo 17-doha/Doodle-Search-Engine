@@ -7,7 +7,6 @@ Description
 •	Text-analysis-based project that combines NLP, ML, and IR concepts to generate an accurate search engine with a simple GUI for displaying the outputs.  
   
 
-**Input** **Data:** Retailer, Retailer ID, Invoice Date, Region, State, City, Product, Price per Unit, Units Sold, Total Sales, Operating Profit, Operating Margin, Sales Method  
 
 **Used Tools:**  
  * Python    
@@ -19,10 +18,12 @@ Description
  * Streamlit 
 
 **Data Collection:**  
- * I prepared the collection through scrapping wikipedia documents + some other documents from google of total 115 terms and around 5 documents for each one and total corpus contains 529 document. 
-Colab for preparing data: https://colab.research.google.com/drive/1azsLGr0y3G-wUPrp04BW8mHwE265DdIA?usp=sharing
+ * I prepared the collection through scrapping wikipedia documents + some other documents from google of total 115 terms and around 5 documents for each one and total corpus contains 529 document.
+* Colab for preparing data: https://colab.research.google.com/drive/1azsLGr0y3G-wUPrp04BW8mHwE265DdIA?usp=sharing
+  
 **Preprocessing:**
 * Preprocessing took place for cleaning using regex library, tokenization, stemming, remove stop words, removing duplicates, and removing additional unnecessary spaces.
+  
  **Indexing:**
 * Indexing took place through python terrier library to prepare index and inverted index of the whole corpus.
 * Got a list of the unique terms to be used later in retrieval.
